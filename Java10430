@@ -1,0 +1,30 @@
+import java.util.*;
+public class test0318 {
+	public static void main(String[] args) {
+	 int a, b ,c ,result, result2, result3, result4 ;
+	 Scanner in = new Scanner(System.in);
+	 
+	 a = in.nextInt();
+	 b = in.nextInt();
+	 c = in.nextInt();
+     
+     result = 0;
+     result2= 0;
+     result3= 0;
+     result4= 0;
+
+     result = (a+b)%c ;
+     result2 =((a%c)+(b%c))%c ;
+
+     System.out.println(result);
+     System.out.println(result2);
+     
+     result3 = (a*b)%c;
+     result4 = (a%c)*(b%c)%c;
+     System.out.println(result3);
+     
+     System.out.println(result4);
+     
+     
+	}
+}
