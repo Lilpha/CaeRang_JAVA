@@ -1,0 +1,30 @@
+package test1;
+import java.util.*;
+
+public class test2884 {
+	public static void main(String[] args) {
+		int H, M, aH, aM;
+		Scanner in = new Scanner(System.in);
+		H = 0;
+		M = 30;
+		//만약 내가 sacnner로 H와 M을 받았다고 가정하고.	
+	 M= M -45;
+			 if (M < 0) {
+				 /*
+				 aM = aM * -1 ; //이 줄에서 -15분이 15분으로 변함
+				 aM = 60- aM; // 60에서 15분을 빼버림 사실 그냥 -15 더하면 되지 않나..?
+			 */
+				 M = 60 + M;
+				 
+				 H = H - 1;
+				 
+			 }
+			 if (H <0 ) {
+				 H = 23;
+			 }
+			 System.out.println(H+" "+M);
+			 //scanner로 한줄에서 받은 값을 두개의 변수로 저장하는 걸 배워야 할듯.
+			 
+	}
+
+}
