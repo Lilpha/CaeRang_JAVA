@@ -1,0 +1,46 @@
+package test1;
+
+import java.util.Scanner;
+
+public class test2530 {
+    public static void main(String[] args) {
+     Scanner in = new Scanner(System.in);
+     int H,M,S,addTime,DivM,DivS;
+     H = in.nextInt();
+     M = in.nextInt();
+     S = in.nextInt();
+     addTime = in.nextInt();
+     DivM = addTime/60;
+     DivS = (addTime%60);
+     /*System.out.println(DivM);
+     System.out.println(DivS);*/
+     
+//일단 입력값을 분, 초로 나누는데는 완료 이제 분을 시로 올리는 작업
+     
+     if (DivM >= 60) {
+    	 H = H + (DivM/60); //H입력된 시간 + DivM을 시로 나눈값을 더함
+    	 DivM = DivM%60; //DivM을 시간으로 나누고 남은 잔재= 분을 DivM에 넣는 과정
+     }
+    
+     /*System.out.println(H);*/
+     if ( H >= 24) {
+    	 H = H-24;
+     }
+     //24시가 되었을때 0시로 초기화.
+     // 자 이게 입력시간을 시간, 분 으로 나누고 H에 더하는 작업까지 함. 그러면 M 정리하고 S정리하고 예시 출력 ㄱ
+     
+     M = M + DivM; //현재시간 + 입력받은 분
+     S = S + DivS;// 현재시간(초) + 입력받은걸 분으로 나누고 남은 초
+     
+     if (M >= 60) {
+    	 H = H + (M/60);
+    	 M = M%60; //만약 M이 60이상일 경우 H에 60을 나눈값을 더하고 M은 60으로 나눈후 잔재
+     }
+     if (S >= 60) {
+    	 M = M+ (S/60);
+    	 S = S%60; //위 과정과 동일.
+     }
+     
+     System.out.println(H+" "+M+" "+S);
+        }
+    }
