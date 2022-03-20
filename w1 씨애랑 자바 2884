@@ -5,8 +5,11 @@ public class test2884 {
 	public static void main(String[] args) {
 		int H, M, aH, aM;
 		Scanner in = new Scanner(System.in);
-		H = 0;
-		M = 30;
+		
+		H = in.nextInt();
+       		M = in.nextInt();
+		/* H = 0;
+		M = 30;        (edit 03.20) */
 		//만약 내가 sacnner로 H와 M을 받았다고 가정하고.	
 	 M= M -45;
 			 if (M < 0) {
