@@ -1,9 +1,0 @@
-package test1;
-
-import java.util.Scanner;
-
-public class test2530 {
-예시
-     System.out.println(H+" "+M+" "+S);
-        }
-    }
