@@ -1,0 +1,24 @@
+import java.util.*;
+public class abcdef {
+	public static void main(String [] args) {
+	
+		Scanner in = new Scanner(System.in);
+		
+	int a, b ,c;
+// scan문으로 정수 입력받기. 이후 ~a 를 통해서 <<비트 반전자 한 후 출력 = 비트 반전 된 수
+		System.out.println("정수를 입력하시오");
+		a = in.nextInt(); //10 입력
+		System.out.println("입력받은 정수"+a);
+		b = ~a;
+		System.out.println(a+"의 비트 반전 값"+b);
+		
+	
+		System.out.println(Integer.toBinaryString(b));               //32비트 2진수 -11
+		
+    System.out.println(Integer.toBinaryString(a));  //2진수 10
+	
+	
+
+
+	}
+}
