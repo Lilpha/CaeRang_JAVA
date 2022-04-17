@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class rev_Ex_1{
+	public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = 7;
+		
+		int i=n;
+		
+		while (i>0) { //i--의 모양이므로 양수 제한 걸어넣지 않으면 무제한 반복이라 0으로 제한
+			int j =1;
+			while(j<=i) {	//j가 i보다 작을때 = j가 1부터 증가함 = i만큼 반복 i는 줄어드는 모양이기에 별이 점점 줄어듬
+				System.out.print("*");
+			j++;  //j++해서 밖에 있는 i까지 맞추어 나감 j=i가 되는순간 탈출 하고 enter 한번 하고 다시 들어옴
+			}
+			System.out.println();
+			i--;
+		}
+	}
+}
