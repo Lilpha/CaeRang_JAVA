@@ -1,0 +1,27 @@
+import java.util.*;
+public class maxsame {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a, b, c, temp;
+		a =0;b=0;c=0;temp=0;
+		System.out.println("a,b를 입력하세요 (a>=b)");
+		a =sc.nextInt();
+		b=sc.nextInt();
+		
+		if(b>a) {System.out.println("b가 a보다 큽니다 다시 입력하세요");}
+		else {
+			while(temp==0) {	
+				c=a%b;
+				if(c ==0) {
+					temp =b;
+					break;
+				}
+				else {a=b; b=c;}
+				
+			}
+			System.out.println("while문 탈출");
+			System.out.println(temp+"는 최대공약수");
+			
+		}
+	}
+}
