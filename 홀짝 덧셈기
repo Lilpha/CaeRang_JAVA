@@ -1,0 +1,19 @@
+import java.util.*;
+public class defadder {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a, b, sum, sum1;
+		a=0; sum =0; sum1 =0 ;
+		while(a>-1) {
+			a =sc.nextInt();
+			if(a !=-1) {
+				if(a%2 ==0) {
+					sum = sum+a;
+				}
+				else {sum1 = sum1+a;}
+			}
+		}
+		System.out.println("-1 입력확인");
+		System.out.println("짝수합"+sum+" 홀수합"+sum1);
+	}
+}
