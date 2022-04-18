@@ -4,12 +4,12 @@ public class Ex_1{
 		Scanner sc = new Scanner(System.in);
 		int n = 7;
 		
-		int i=1;
+		int i=0;
 		
 		while(i<=n) {		//기본적인 n만큼의 반복문
 			int j=1;			//한줄을 마무리 할때 마다 j를 1로 설정
-			while(j<=n-i+1) {		//최초 실행시 j=1 
-				System.out.print("*");//n-i+1    n-i는 n만큼 별 출력하는데 i번째 내려갔으므로 
+			while(j<=n-i) {		//최초 실행시 j=1 <7-0  == j가 7이 되면 while문 한번 실행 후 탈출함.
+				System.out.print("*");//n-i   n-i는 n만큼 별 출력하는데 내려간 i만큼 숫자를 제외함.
 				j++;
 			}
 			System.out.println();
